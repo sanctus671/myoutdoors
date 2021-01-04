@@ -6977,12 +6977,16 @@ var MapService = /** @class */ (function () {
     };
     MapService.prototype.moveMaps = function (lat, lng) {
         var coords = ol_proj__WEBPACK_IMPORTED_MODULE_16__["transform"]([lat, lng], 'EPSG:3857', 'EPSG:4326');
-        this.leafletMap.panTo({ lng: coords[0], lat: coords[1] });
-        var view = this.openLayersMap.getView();
-        view.animate({
-            center: [lat, lng],
-            duration: 1000,
-        });
+        if (this.leafletMap) {
+            this.leafletMap.panTo({ lng: coords[0], lat: coords[1] });
+        }
+        if (this.openLayersMap) {
+            var view = this.openLayersMap.getView();
+            view.animate({
+                center: [lat, lng],
+                duration: 1000,
+            });
+        }
     };
     MapService.prototype.moveMapsNoAnimation = function (lat, lng) {
         var coordsLatLng = ol_proj__WEBPACK_IMPORTED_MODULE_16__["fromLonLat"]([lng, lat]);
