@@ -11,7 +11,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <preference name="phonegap-version" value="cli-9.0.0" /> 
+    <preference name="phonegap-version" value="cli-9.0.0" />
     <preference name="ScrollEnabled" value="false" />
     <preference name="BackupWebStorage" value="none" />
     <preference name="SplashMaintainAspectRatio" value="true" />
@@ -73,9 +73,9 @@
         <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/application">
             <application android:icon="@mipmap/launcher" android:roundIcon="@mipmap/launcher_round" />
         </edit-config>
-		<plugin name="cordova-plugin-inappbrowser" spec="^4.0.0" />
-		<plugin name="onesignal-cordova-plugin" spec="^2.3.3" />
-		<plugin name="cordova-plugin-stripe" spec="~1.5.3" />
+        <plugin name="cordova-plugin-inappbrowser" spec="^4.0.0" />
+        <plugin name="onesignal-cordova-plugin" spec="^2.3.3" />
+        <plugin name="cordova-plugin-stripe" spec="~1.5.3" />
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
@@ -130,9 +130,9 @@
         <edit-config file="*-Info.plist" mode="merge" target="NSCameraUsageDescription">
             <string>Take pictures for your profile</string>
         </edit-config>
-		<plugin name="cordova-plugin-inappbrowser" spec="^3.1.0" />      
-		<plugin name="onesignal-cordova-plugin" spec="2.7.0" />
-		<gap:plugin spec="https://github.com/sanctus671/cordova-plugin-stripe.git#v2" />  
+        <plugin name="cordova-plugin-inappbrowser" spec="^3.1.0" />
+        <plugin name="onesignal-cordova-plugin" spec="2.7.0" />
+        <plugin spec="https://github.com/sanctus671/cordova-plugin-stripe.git#v2" />
     </platform>
     <plugin name="cordova-plugin-whitelist" spec="1.3.3" />
     <plugin name="cordova-plugin-statusbar" spec="2.4.2" />
@@ -146,7 +146,7 @@
     <plugin name="cordova-plugin-camera" spec="^4.1.0" />
     <plugin name="cordova-plugin-x-socialsharing" spec="^5.6.8">
         <variable name="ANDROID_SUPPORT_V4_VERSION" value="24.1.1+" />
-    </plugin>  
-    <engine name="android" spec="^8.0.0" />
+    </plugin>
     <plugin name="cordova-plugin-device-orientation" spec="^2.0.1" />
+    <engine name="android" spec="^8.0.0" />
 </widget>
