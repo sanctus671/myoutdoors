@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.myoutdoors.app" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.myoutdoorsnz.app" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>My Outdoors</name>
     <description>View tracks and placemarks or create your own.</description>
     <author email="taylor@taylorhamling.com" href="https://www.taylorhamling.com/">Taylor Hamling</author>
@@ -20,8 +20,8 @@
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="3000" />
     <preference name="loadUrlTimeoutValue" value="700000" />
-    <preference name="android-minSdkVersion" value="19" />
-    <preference name="android-targetSdkVersion" value="28" />
+    <preference name="android-minSdkVersion" value="22" />
+    <preference name="android-targetSdkVersion" value="30" />
     <preference name="SplashMaintainAspectRatio" value="true" />
     <preference name="AutoHideSplashScreen" value="false" />
     <preference name="FadeSplashScreen" value="true" />
@@ -130,7 +130,6 @@
         <edit-config file="*-Info.plist" mode="merge" target="NSCameraUsageDescription">
             <string>Take pictures for your profile</string>
         </edit-config>
-        <plugin name="cordova-plugin-inappbrowser" spec="^3.1.0" />
         <plugin name="onesignal-cordova-plugin" spec="2.7.0" />
         <plugin spec="https://github.com/sanctus671/cordova-plugin-stripe.git#v2" />
     </platform>
@@ -143,10 +142,10 @@
     <plugin name="cordova-plugin-splashscreen" spec="^6.0.0" />
     <plugin name="cordova-plugin-ionic-webview" spec="^5.0.0" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.2.0" />
-    <plugin name="cordova-plugin-camera" spec="^4.1.0" />
-    <plugin name="cordova-plugin-x-socialsharing" spec="^5.6.8">
-        <variable name="ANDROID_SUPPORT_V4_VERSION" value="24.1.1+" />
-    </plugin>
     <plugin name="cordova-plugin-device-orientation" spec="^2.0.1" />
-    <engine name="android" spec="^8.0.0" />
+    <plugin name="cordova-plugin-inappbrowser" spec="^3.2.0" />
+    <plugin name="cordova-plugin-camera" spec="^6.0.0" />
+    <plugin name="cordova-plugin-x-socialsharing" spec="^6.0.3" />
+    <engine name="android" spec="^9.0.0" />
+    <plugin name="cordova-sqlite-storage" spec="^6.0.0" />
 </widget>

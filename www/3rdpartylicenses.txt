@@ -38,6 +38,12 @@ MIT
 @angular/router
 MIT
 
+@awesome-cordova-plugins/core
+MIT
+
+@awesome-cordova-plugins/keyboard
+MIT
+
 @babel/runtime
 MIT
 MIT License
