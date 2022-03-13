@@ -132,6 +132,11 @@
         </edit-config>
         <plugin name="onesignal-cordova-plugin" spec="2.7.0" />
         <plugin spec="https://github.com/sanctus671/cordova-plugin-stripe.git#v2" />
+        <preference name="WKWebViewOnly" value="true" />
+        <feature name="CDVWKWebViewEngine">`
+                                                            <param name="ios-package" value="CDVWKWebViewEngine" />
+</feature>
+        <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
     </platform>
     <plugin name="cordova-plugin-whitelist" spec="1.3.3" />
     <plugin name="cordova-plugin-statusbar" spec="2.4.2" />
@@ -146,6 +151,7 @@
     <plugin name="cordova-plugin-inappbrowser" spec="^3.2.0" />
     <plugin name="cordova-plugin-camera" spec="^6.0.0" />
     <plugin name="cordova-plugin-x-socialsharing" spec="^6.0.3" />
-    <engine name="android" spec="^9.0.0" />
     <plugin name="cordova-sqlite-storage" spec="^6.0.0" />
+    <plugin name="cordova-plugin-insomnia" spec="^4.3.0" />
+    <engine name="android" spec="^9.0.0" />
 </widget>
