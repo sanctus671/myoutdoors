@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.myoutdoorsnz.app" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.myoutdoorsnz.app" version="0.0.3" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>My Outdoors</name>
     <description>View tracks and placemarks or create your own.</description>
     <author email="taylor@taylorhamling.com" href="https://www.taylorhamling.com/">Taylor Hamling</author>
@@ -134,7 +134,7 @@
         <plugin spec="https://github.com/sanctus671/cordova-plugin-stripe.git#v2" />
         <preference name="WKWebViewOnly" value="true" />
         <feature name="CDVWKWebViewEngine">`
-                                                            <param name="ios-package" value="CDVWKWebViewEngine" />
+                                                                                                                                                                                                                        <param name="ios-package" value="CDVWKWebViewEngine" />
 </feature>
         <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
     </platform>
@@ -149,9 +149,12 @@
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.2.0" />
     <plugin name="cordova-plugin-device-orientation" spec="^2.0.1" />
     <plugin name="cordova-plugin-inappbrowser" spec="^3.2.0" />
-    <plugin name="cordova-plugin-camera" spec="^6.0.0" />
     <plugin name="cordova-plugin-x-socialsharing" spec="^6.0.3" />
     <plugin name="cordova-sqlite-storage" spec="^6.0.0" />
     <plugin name="cordova-plugin-insomnia" spec="^4.3.0" />
+    <plugin name="cordova-plugin-camera" spec="^4.1.0">
+        <variable name="ANDROID_SUPPORT_V4_VERSION" value="27.+" />
+    </plugin>
+    <plugin name="cordova-plugin-androidx-adapter" spec="^1.1.3" />
     <engine name="android" spec="^9.0.0" />
 </widget>
